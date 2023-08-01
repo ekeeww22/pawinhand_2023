@@ -25,4 +25,7 @@
     main #pawin_slide .swiper-wrapper .slide1 {
         background:url(../images/pawin_slide_m.jpg) center;
     }
+    main #pawin_slide .swiper-wrapper .slide2 {
+        background: url(../images/pawin_slide_m2.jpg) center;
+    }
 }/* 900px end */
