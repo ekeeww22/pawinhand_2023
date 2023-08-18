@@ -12,7 +12,7 @@
     header nav ul {display:none;}
     header nav .m_nav {
         width:40px; height:40px; 
-        background:lime; display:flex; flex-flow:column nowrap; justify-content:space-between;
+        display:flex; flex-flow:column nowrap; justify-content:space-between;
     }
     header nav .m_nav span {width:100%; height:8px; border-radius:5px; background:#222;}
     header nav .m_nav span:nth-child(1) {}

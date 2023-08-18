@@ -1,17 +1,16 @@
 /* Desktop */
-header {background:aqua; max-width:1160px; height:100px; margin:0 auto; display:flex; flex-flow:row nowrap; justify-content:space-between; align-items: center; position:relative;/* m-nav-open absolute 기준 */}
-header h1 {background:yellow; width:100px; height:35px;}
+header {max-width:1160px; height:100px; margin:0 auto; display:flex; flex-flow:row nowrap; justify-content:space-between; align-items: center; position:relative;/* m-nav-open absolute 기준 */}
+header h1 {width:150px;}
 header h1 a {}
 header h1 a img {width:100%;}
-header nav {background:pink;}
+header nav {}
 header nav ul {display:flex; flex-flow:row nowrap;}
 header nav ul li {margin-right:20px;}
 header nav ul li:last-child {margin-right:0;}
-header nav ul li a {font-size:1.333rem; letter-spacing:-0.02em;}
+header nav ul li a {font-size:1.333rem; letter-spacing:-0.02em; font-weight:500;}
 /* 모바일 메뉴 - 데스크탑에서 숨기기 */
 header nav .m_nav {display:none;}
-header .m_nav_open {position:absolute; top:100px;
-    background:lime; display:none; width:100%; padding:43px 0; 
+header .m_nav_open {position:absolute; top:100px; display:none; width:100%; padding:43px 0; 
 }
 header .m_nav_open #close {font-size:24px; position:absolute; top:18px; right:18px;}
 header .m_nav_open ul { width:100%;}
@@ -27,27 +26,28 @@ main {}
 main #pawin_slide {max-width:1160px; height:650px;}
 main #pawin_slide .swiper-wrapper {}
 main #pawin_slide .swiper-wrapper .swiper-slide {}
+main #pawin_slide .swiper-wrapper .swiper-slide p {}
 main #pawin_slide .swiper-wrapper .slide1 {
     background:url(../images/pawin_slide_desktop.jpg) center;
 }
 main #pawin_slide .swiper-wrapper .slide2 {
     background: url(../images/pawin_slide_desktop2.jpg) center;
 }
-main #pawin_slide .swiper-wrapper .slide3 {
+/* main #pawin_slide .swiper-wrapper .slide3 {
     background: url(https://picsum.photos/id/299/1160);
 }
 main #pawin_slide .swiper-wrapper .slide4 {
     background: url(https://picsum.photos/id/401/1160);
-}
+} */
 main #pawin_slide .swiper-button-prev, 
 main #pawin_slide .swiper-button-next {width:40px; height:40px;}
 /* swiper-slid prev, next 기본 css (position:absolute)내장 */
 /* 위치를 움직이고 싶다면 position속성 추가작성 없이 방향값 추가 */
 main #pawin_slide .swiper-button-prev {
-    background:url(../images/prev.png) no-repeat; left:20px;
+    background:url(../images/prev_1.png) no-repeat; left:20px;
 }
 main #pawin_slide .swiper-button-next {
-    background:url(../images/next.png) no-repeat; right:20px;
+    background:url(../images/next_1.png) no-repeat; right:20px;
 }
 /* swiper-slide 라이브러리에서 기본제공하는 이전, 다음 숨기기 */
 main #pawin_slide .swiper-button-prev::after,
@@ -82,8 +82,9 @@ main #pawin_slide2 .swiper-slide img {width:100%}
 /* 입양정보 slide */
 main .dog_info {padding:100px 0 50px; font-size:2rem; font-weight:600; text-align:center;}
 main #dog_info_slide {
-    background:aqua;
     max-width:1160px; margin:0 auto;
     width:calc(100% - 30px);
 }
 main #dog_info_slide .swiper-wrapper .swiper-slide img {width:100%;}
+main #dog_info_slide .swiper-wrapper .swiper-slide h2 {font-weight:700; line-height:20px;}
+main #dog_info_slide .swiper-wrapper .swiper-slide p {line-height:20px;}

@@ -35,7 +35,7 @@ close.addEventListener('click',function(){
 // const 변수명 = new Swiper('적용대상',{속성:값, 속성:값});
 const pawin_slide = new Swiper('#pawin_slide',{
     autoplay:{
-        delay:10000, // 슬라이드 간격(밀리초) 기본 3초
+        delay:3000, // 슬라이드 간격(밀리초) 기본 3초
         disableOnInteraction:false, // 버튼 클릭 후 자동재생유지
     }, // 자동재생
     loop:true, // 마지막 슬라이드 -> 첫 번째 슬라이드로 자연스러운 변경
@@ -65,7 +65,7 @@ const pawin_slide2 = new Swiper('#pawin_slide2',{
 const dog_info_slide = new Swiper('#dog_info_slide',{
     slidesPerView:'auto', // breakpoints옵션 추가시 'auto' 한번에 보이는 슬라이드 갯수
     spaceBetween:20, // 슬라이드 사이 여백
-    autoplay:{delay:1000},
+    autoplay:{delay:3000},
     loop:true,
     // swiper-slide 반응형웹 옵션
     breakpoints:{
